@@ -1,0 +1,409 @@
+
+:root
+    --pink: #ff52bf
+    --light-pink: #ff8fd8
+    --light-red: #ff4242
+    --dark-cyan: #00252e
+    --pale-cyan: #f5faff
+    --white: #ffffff
+    --gray: #9e9e9e
+
+html
+    box-sizing: border-box
+    font-size: 62.5%
+
+*, *:before, *:after
+    box-sizing: inherit
+
+::selection
+    color: var(--white)
+    background: var(--light-pink)
+
+//* globals
+
+body
+    font-family: 'Poppins', sans-serif
+    background-color: #fff
+
+img
+    width: 100%
+
+p
+    font-family: 'Open Sans', sans-serif
+
+a
+    text-decoration: none
+
+.container
+        padding: 0 3rem
+
+.btn
+    background-color: var(--pink)
+    cursor: pointer
+    border-style: none
+    border-radius: 5rem
+    color: var(--white)
+    padding: 2rem 8rem
+    font-size: 1.4rem
+    transition: .2s ease all
+
+.btn:hover
+    background-color: var(--light-pink)
+
+//* header
+
+header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 12rem
+    padding: 0 8rem
+
+.header__logo
+    width: 18rem
+
+.btn__header
+    cursor: pointer
+    background-color: var(--white)
+    border: .1rem solid var(--light-pink)
+    border-radius: 5rem
+    color: var(--light-pink)
+    font-size: 1.2rem
+    font-weight: 200
+    padding: 1rem 3rem
+    transition: .2s ease all
+
+.btn__header:hover
+    box-shadow: 1px 1px 10px 0px rgba(255,82,191,0.5)
+    
+main
+    // max-width: 140rem
+    margin: auto
+
+//* PRODUCT
+
+.product
+    display: flex
+    align-items: center
+    flex-direction: column
+    margin-top: 10rem
+
+.btn,
+.product__title,
+.product__info,
+.product__container
+    margin: 2.4rem 0
+
+
+.product__title
+    text-align: center
+    font-size: 4.2rem
+
+.product__info
+    max-width: 50rem
+    font-family: 'Open Sans', sans-serif
+    text-align: center
+    font-size: 1.6rem
+    font-weight: 400
+    line-height: 2.4rem
+    // padding: 0 42rem
+
+.product__container
+    margin-top: 6rem
+    max-width: 90rem
+
+.product__numbers
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    margin-top: 8rem
+    width: 55%
+
+.numbers__icon
+    margin: 0
+    width: 18%
+
+.numbers__title
+    margin-top: 1.4rem
+    margin-bottom: 2rem
+    font-family: 'Open Sans', sans-serif
+    font-size: 7rem
+    text-align: center
+
+.numbers__info
+    text-align: center
+    font-size: 1.8rem
+    font-weight: 300
+    color: var(--gray)
+    margin: 0
+
+//* GROW TOGETHER
+
+.grow__diviser  
+    margin-top: 12rem
+
+.top__diviser,
+.bottom__diviser
+    position: relative
+    display: block
+    overflow: hidden
+
+.mg__bottom
+    margin-bottom: 8rem
+
+.mg__top
+    margin-top: 8rem
+
+.end__bottom
+    margin-bottom: 16rem
+
+.end__top
+    margin-top: 16rem
+
+.grow
+    background-color: var(--pale-cyan)
+
+.about__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: auto
+    padding: 6rem 0
+    max-width: 120rem
+
+.about__title
+    font-size: 3.6rem
+ 
+.about__text
+    max-width: 46rem
+    font-size: 1.4rem
+    line-height: 2.4rem
+
+.image__container
+    max-width: 46rem
+
+
+//* FLOWING CONVERSATION
+
+
+
+
+
+//* your users 
+
+
+.users
+    background-color: var(--pale-cyan)
+
+
+//* end 
+
+.end
+    display: flex
+    align-items: center
+    flex-direction: column
+
+
+.end__title
+    text-align: center
+    font-size: 3.6rem
+
+
+//* footer
+
+
+footer
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    background-color: var(--dark-cyan)
+    padding: 10rem 14rem
+    color: var(--white)
+
+.hdr__inv
+    width: 18rem
+    margin-bottom: 1.6rem 
+    filter: invert(99%) sepia(21%) saturate(2%) hue-rotate(161deg) brightness(114%) contrast(100%)
+
+.phone,
+.email
+    display: flex
+    align-items: center
+    justify-content: flex-start
+
+.contact__text
+    font-size: 1.4rem
+    line-height: 2.4rem
+    max-width: 30rem
+    margin-bottom: 1.6rem
+
+.contact__icon
+    font-size: 1.8rem
+    margin-right: 1.4rem
+
+.social
+    margin-top: 4.8rem
+
+.social__icon
+    padding: 1rem 1rem
+    border-radius: 1rem
+    margin-right: 2.4rem
+    color: var(--white)
+    font-size: 2.4rem
+    transition: .1s ease all
+
+.fb__icon:hover
+    background-color: #1877f2
+.ig__icon:hover
+    background-color: #fcaf45
+.tw__icon:hover
+    background-color: #1da1f2
+
+.nl__title
+    font-size: 2.2rem
+    font-weight: 300
+    text-transform: uppercase
+    margin-top: 0
+
+.nl__text
+    max-width: 28rem
+    font-size: 1.2rem
+    line-height: 2rem
+
+.form
+    font-size: 1.2rem
+
+.form input[type="email"]
+    outline: none
+    border: .2rem solid var(--white)
+    width: 30rem
+    height: 4.5rem
+    border-radius: 1rem
+    padding-left: 1.6rem
+    margin-right: 2.5rem
+
+.form input[type="email"]:focus
+    border: .2rem solid var(--light-pink)
+
+.btn__form
+    cursor: pointer
+    border: none
+    border-radius: 1rem
+    height: 4.5rem
+    background-color: var(--pink)
+    padding: 1rem 3.8rem
+    color: var(--white)
+    transition: .2s ease all
+
+.btn__form:hover
+    background-color: var(--light-pink)
+
+//* credits
+
+.credits
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 4rem
+    background-color: #000
+
+.credits p
+    font-family: 'IBM Plex Mono', monospace
+    text-align: center
+    text-transform: uppercase
+    color: var(--white)
+    font-size: 1.1rem
+
+.credits a
+    color: #CA54F3
+
+//! mediaqueries
+
+//* 428px MediaQuerie
+
+@media (max-width: 428px)
+
+    //* header
+
+    header
+        padding: 0 2rem
+
+    .header__logo
+        width: 12rem
+
+
+    //* product
+
+    .product
+        margin-top: 5rem
+
+    .product__title
+        font-size: 3rem
+
+    .product__info
+        padding: 0 2rem
+        font-size: 1.4rem
+
+    .product__numbers
+        flex-direction: column
+
+    //* product
+
+    .product__community
+        margin-bottom: 14rem
+
+    .about__container
+        flex-direction: column-reverse
+        text-align: center
+
+    .flowing .about__container
+        flex-direction: column
+
+    .image__container
+        margin-bottom: 6rem
+
+    .about__title
+        font-size: 2.6rem
+
+    //* end
+
+    .end__title
+        font-size: 3rem
+    
+    //* footer
+
+    footer
+        flex-direction: column-reverse
+        padding: 10rem 3rem
+
+    .contact
+        margin-top: 8rem
+
+    .form
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+
+    .form input[type="email"]
+        margin-right: 0rem
+        width: 100%
+
+    .btn__form
+        margin-top: 1.2rem
+
+    .nl__text
+        max-width: none
+        font-size: 1.4rem
+        padding-right: 2rem
+        margin-bottom: 3rem
+
+    //* credits
+
+    .credits p
+        font-size: 1rem
+
+//* 834px MediaQuerie
+
+@media (max-width: 834px)
+    
+    
